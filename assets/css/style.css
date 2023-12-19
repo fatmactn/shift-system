@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 15%;
+    height: 100%;
+    background-color: #3498db;
+    position: fixed;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar li {
+    padding: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li::before {
+    content: '\2022';
+    color: white;
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 8px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.sidebar h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.content {
+    margin-left: 15%;
+    padding: 16px;
+}
+
+h2 {
+    padding-bottom: 30px;
+}
+
+.shift-form {
+    width: 85%;
+    margin: 50px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 0 0 calc(24% - 10px);
+    margin-bottom: 15px;
+}
+
+.form-group.full {
+    flex: 0 0 calc(100% - 10px);
+}
+
+.label-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.label-group.full {
+    justify-content: flex-start;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group {
+    width: calc(48% - 10px);
+}
+
+.input-group.full {
+    width: 100%;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    margin: 5px 0;
+    height: 40px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group .checkbox-label {
+    margin-bottom: 5px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.checkbox-group input {
+    margin-right: 5px;
+}
+
+.shift-form button {
+    background-color: #0e9d30;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 17px;
+    bottom: 2%;
+    border-radius: 5px;
+}
+
+.shift-list-form button {
+    background-color: #0e9d30;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 5%;
+    border-radius: 5px;
+}
+
+.shift-list-form {
+    width: 85%;
+    margin: 50px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 4px 6px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #7a7a7a;
+    border: 1px solid #7a7a7a;
+}
+
+.pagination .active {
+    background-color: #3498db;
+    color: white;
+}
+
+.pagination a:hover {
+    background-color: #0e9d30;
+}
+
+#address {
+    width: 435%;
+}
+
+#shift-form-wrapper {
+    justify-content: flex-start !important;
+    gap: 1rem;
+}
+
+#shift-form-wrapper input {
+    width: 100%;
+    min-width: 240px;
+}
